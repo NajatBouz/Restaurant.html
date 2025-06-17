@@ -1,0 +1,205 @@
+body {
+    font-family: "WDXL Lubrifont SC", sans-serif;
+    background-color: #ffee98;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+  
+    animation: fade-slide-in 1.2s ease-out;
+  }
+  header {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #1f5606;
+    padding: 60px 20px;
+    font-family: "WDXL Lubrifont SC", sans-serif; color: #156d21;
+    padding: 30px 0; 
+    display: flex;
+    justify-content: center;
+    
+      
+  }
+
+  .header-box {
+    background-image: url(https://as1.ftcdn.net/jpg/00/87/38/78/1000_F_87387828_sQkUIF1L1pvLNWbExHiUjbOLWkctbuzJ.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    width: 90%;           
+    max-width: 900px;     
+    padding: 40px 30px;
+    border: 5px solid #ddd;  
+    border-radius: 15px;     /* abgerundete Ecken */
+  
+    color: rgb(6, 103, 58);            /* Schriftfarbe */
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3); /* weicher Schatten */
+    
+    font-family: "WDXL Lubrifont SC", sans-serif;
+  }
+
+  .text-hintergrund {
+    background-color: rgba(227, 196, 103, 0.5); /* halbtransparentes Schwarz */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .wdxl-lubrifont-sc-regular {
+    font-family: "WDXL Lubrifont SC", sans-serif;
+    font-weight: 700;
+    font-style: 32 px;
+  }
+
+  .sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  
+  .header-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    
+  }
+  
+  header h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  header p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #156d21;
+    background-color: #ebb62e;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ea9322;
+   }
+  
+  
+  main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  section#ueber-uns h2 {
+    font-size: 32px;
+    color: #2E8B57;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  section#ueber-uns p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  section#ueber-uns img {
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .bild-bestand {
+    padding: 40px 20px;
+    background-color: #ebbd62;
+    text-align: center;
+    animation: fade-slide-in 1.2s ease-out;
+  }
+  
+  .bild-bestand h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #a44400;
+  }
+  
+  .bild-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .bild-grid img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .bild-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  /* === Footer === */
+  footer {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  footer h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  footer h2 {
+    font-size: 18px;
+    color: #dddddd;
+
+    }
+
+    @keyframes fade-slide-in {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+
+    

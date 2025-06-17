@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="description" content="Dies ist das Kurs-Portfolio vom Kurs 25-01">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zum Goldenen Hirsch</title>
+    <title>Reservierung - Das Kneipen Gasthaus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Kopfbereich -->
-    <header>
-        <h1>Reservierung - Zum Goldenen Hirsch</h1>
-       
+  <header>
+    <div class="header-box">
+      <div class="text-hintergrund">
+        <h1>Das Kneipen Gasthaus</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ueber-uns.html">Über uns</a></li>
-                <li><a href="speisekarte.html">Speisekarte</a></li>
-                <li><a href="reservierung.html">Reservierung</a></li>
-                <li><a href="events.html">Event</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="speisekarte.html">Speisekarte</a></li>
+            <li><a href="reservierung.html">Reservierung</a></li>
+            <li><a href="events.html">Event</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
         </nav>
-    </header>
+      </div>
+    </div>
+  </header>
 
     <main>
         <form>
@@ -78,19 +84,19 @@
               
                 <fieldset>
                   <legend>Anlass</legend>
-                  <label><input type="radio" name="occasion" value="gemuetlich" required> Gemütlich</label><br>
-                  <label><input type="radio" name="occasion" value="business"> Business</label><br>
-                  <label><input type="radio" name="occasion" value="feier"> Feier</label><br>
-                  <label><input type="radio" name="occasion" value="romantisch"> Romantisch</label>
+                  <label><input type="radio" name="anlass" value="gemuetlich" required> Gemütlich</label><br>
+                  <label><input type="radio" name="anlass" value="business"> Business</label><br>
+                  <label><input type="radio" name="anlass" value="feier"> Feier</label><br>
+                  <label><input type="radio" name="anlass" value="romantisch"> Romantisch</label>
                 </fieldset>
               
           
                 <fieldset>
                   <legend>Besondere Wünsche</legend>
-                  <label><input type="checkbox" name="wuensche[]" value="fensterplatz"> Fensterplatz</label><br>
-                  <label><input type="checkbox" name="wuensche[]" value="ruhig"> Ruhig</label><br>
-                  <label><input type="checkbox" name="wuensche[]" value="rollstuhlgerecht"> Rollstuhlgerecht</label><br>
-                  <label><input type="checkbox" name="wuensche[]" value="kinderstuhl"> Kinderstuhl</label>
+                  <label><input type="checkbox" name="wuensche" value="fensterplatz"> Fensterplatz</label><br>
+                  <label><input type="checkbox" name="wuensche" value="ruhig"> Ruhig</label><br>
+                  <label><input type="checkbox" name="wuensche" value="rollstuhlgerecht"> Rollstuhlgerecht</label><br>
+                  <label><input type="checkbox" name="wuensche" value="kinderstuhl"> Kinderstuhl</label>
                 </fieldset>
               
                 
@@ -110,10 +116,10 @@
                 <fieldset>
                   <legend>Rechtliches</legend>
                   <label>
-                    <input type="checkbox" name="preferences[]" value="agb" required> Ich akzeptiere die AGB
+                    <input type="checkbox" name="preferences" value="agb" required> Ich akzeptiere die AGB
                   </label><br>
                   <label>
-                    <input type="checkbox" name="preferences[]" value="newsletter"> Ich möchte den Newsletter erhalten
+                    <input type="checkbox" name="preferences" value="newsletter"> Ich möchte den Newsletter erhalten
                   </label>
                 </fieldset>
               
