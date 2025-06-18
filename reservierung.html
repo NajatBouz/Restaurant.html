@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Dies ist das Kurs-Portfolio vom Kurs 25-01">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservierung - Das Kneipen Gasthaus</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sevillana&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="description" content="Dies ist das Kurs-Portfolio vom Kurs 25-01">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservierung - Das Kneipen Gasthaus</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sevillana&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="header-box">
-      <div class="text-hintergrund">
+  <div class="page-grid">
+    <header class="site-header">
+      <div class="header-box">
+        <div class="text-hintergrund"></div>
         <h1>Das Kneipen Gasthaus</h1>
         <nav>
           <ul>
@@ -28,109 +29,101 @@
           </ul>
         </nav>
       </div>
-    </div>
-  </header>
+    </header>
 
-    <main>
-        <form>
+    <main class="main-content">
+      <h2>Reservierungsformular</h2>
+      <form>
+        <fieldset>
+          <legend>Ihre Kontaktdaten</legend>
+          <label>Vorname:<br>
+            <input type="text" name="vorname" required>
+          </label><br><br>
+          <label>Nachname:<br>
+            <input type="text" name="nachname" required>
+          </label><br><br>
+          <label>E-Mail:<br>
+            <input type="email" name="email" required>
+          </label><br><br>
+          <label>Telefon:<br>
+            <input type="tel" name="telefon" required>
+          </label>
+        </fieldset>
 
+        <br>
 
-            
-              
-                <fieldset>
-                  <legend>Ihre Kontaktdaten</legend>
-                  <label>
-                    Vorname:
-                    <input type="text" name="vorname" required>
-                  </label><br>
-                  <label>
-                    Nachname:
-                    <input type="text" name="nachname" required>
-                  </label><br>
-                  <label>
-                    E-Mail:
-                    <input type="email" name="email" required>
-                  </label><br>
-                  <label>
-                    Telefon:
-                    <input type="tel" name="telefon" required>
-                  </label>
-                </fieldset>
-              
-                
-                <fieldset>
-                  <legend>Reservierungsdetails</legend>
-                  <label>
-                    Datum:
-                    <input type="date" name="datum" min="<?= date('Y-m-d') ?>" required>
-                  </label><br>
-                  <label>
-                    Uhrzeit:
-                    <select name="uhrzeit" required>
-                      <option value="">-- Bitte wählen --</option>
-                      <option value="17:00">17:00</option>
-                      <option value="18:00">18:00</option>
-                      <option value="19:00">19:00</option>
-                      <option value="20:00">20:00</option>
-                      <option value="21:00">21:00</option>
-                    </select>
-                  </label><br>
-                  <label>
-                    Personenzahl:
-                    <input type="number" name="personen" min="1" max="12" required>
-                  </label>
-                </fieldset>
-              
-              
-                <fieldset>
-                  <legend>Anlass</legend>
-                  <label><input type="radio" name="anlass" value="gemuetlich" required> Gemütlich</label><br>
-                  <label><input type="radio" name="anlass" value="business"> Business</label><br>
-                  <label><input type="radio" name="anlass" value="feier"> Feier</label><br>
-                  <label><input type="radio" name="anlass" value="romantisch"> Romantisch</label>
-                </fieldset>
-              
-          
-                <fieldset>
-                  <legend>Besondere Wünsche</legend>
-                  <label><input type="checkbox" name="wuensche" value="fensterplatz"> Fensterplatz</label><br>
-                  <label><input type="checkbox" name="wuensche" value="ruhig"> Ruhig</label><br>
-                  <label><input type="checkbox" name="wuensche" value="rollstuhlgerecht"> Rollstuhlgerecht</label><br>
-                  <label><input type="checkbox" name="wuensche" value="kinderstuhl"> Kinderstuhl</label>
-                </fieldset>
-              
-                
-                <fieldset>
-                  <legend>Allergien & Weitere Wünsche</legend>
-                  <label>
-                    Allergien / Unverträglichkeiten:<br>
-                    <textarea name="allergien" placeholder="z.B. Laktoseintoleranz, Nüsse..."></textarea>
-                  </label><br>
-                  <label>
-                    Weitere Wünsche:<br>
-                    <textarea name="weitere_wuensche" placeholder="z.B. Geburtstagstorte, Musik..."></textarea>
-                  </label>
-                </fieldset>
-              
-               
-                <fieldset>
-                  <legend>Rechtliches</legend>
-                  <label>
-                    <input type="checkbox" name="preferences" value="agb" required> Ich akzeptiere die AGB
-                  </label><br>
-                  <label>
-                    <input type="checkbox" name="preferences" value="newsletter"> Ich möchte den Newsletter erhalten
-                  </label>
-                </fieldset>
-              
-                <button type="submit">Absenden</button>
-              
+        <fieldset>
+          <legend>Reservierungsdetails</legend>
+          <label>Datum:<br>
+            <input type="date" name="datum" required>
+          </label><br><br>
+          <label>Uhrzeit:<br>
+            <select name="uhrzeit" required>
+              <option value="">-- Bitte wählen --</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+            </select>
+          </label><br><br>
+          <label>Personenzahl:<br>
+            <input type="number" name="personen" min="1" max="12" required>
+          </label>
+        </fieldset>
 
-                </form>
-  
+        <br>
+
+        <fieldset>
+          <legend>Anlass</legend>
+          <label><input type="radio" name="anlass" value="gemuetlich" required> Gemütlich</label><br>
+          <label><input type="radio" name="anlass" value="business"> Business</label><br>
+          <label><input type="radio" name="anlass" value="feier"> Feier</label><br>
+          <label><input type="radio" name="anlass" value="romantisch"> Romantisch</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Besondere Wünsche</legend>
+          <label><input type="checkbox" name="wuensche" value="fensterplatz"> Fensterplatz</label><br>
+          <label><input type="checkbox" name="wuensche" value="ruhig"> Ruhig</label><br>
+          <label><input type="checkbox" name="wuensche" value="rollstuhlgerecht"> Rollstuhlgerecht</label><br>
+          <label><input type="checkbox" name="wuensche" value="kinderstuhl"> Kinderstuhl</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Allergien & Weitere Wünsche</legend>
+          <label>Allergien / Unverträglichkeiten:<br>
+            <textarea name="allergien" placeholder="z.B. Laktoseintoleranz, Nüsse..."></textarea>
+          </label><br><br>
+          <label>Weitere Wünsche:<br>
+            <textarea name="weitere_wuensche" placeholder="z.B. Geburtstagstorte, Musik..."></textarea>
+          </label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Rechtliches</legend>
+          <label>
+            <input type="checkbox" name="preferences" value="agb" required> Ich akzeptiere die AGB
+          </label><br>
+          <label>
+            <input type="checkbox" name="preferences" value="newsletter"> Ich möchte den Newsletter erhalten
+          </label>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Absenden</button>
+      </form>
     </main>
-  
 
+    <footer>
+      <p>© 2025 <b>Das Kneipen Gasthaus</b></p>
+    </footer>
+  </div>
 </body>
-
-</html>

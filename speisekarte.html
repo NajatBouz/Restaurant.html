@@ -1,22 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Dies ist das Kurs-Portfolio vom Kurs 25-01">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speisekarte - Das Kneipen Gasthaus</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sevillana&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Dies ist das Kurs-Portfolio vom Kurs 25-01" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speisekarte - Das Kneipen Gasthaus</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sevillana&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet" />
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    caption {
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 0.5rem;
+      background-color: #f5f5f5;
+      text-align: left;
+      border-bottom: 2px solid #ddd;
+      color: #333;
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    thead th {
+      background-color: #333;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tbody tr:hover {
+      background-color: #e0f7fa;
+    }
+  </style>
 </head>
 
 <body>
-    
-  <header>
-    <div class="header-box">
-      <div class="text-hintergrund">
+  <div class="page-grid">
+    <header class="site-header">
+      <div class="header-box">
+        <div class="text-hintergrund"></div>
         <h1>Das Kneipen Gasthaus</h1>
         <nav>
           <ul>
@@ -29,86 +64,183 @@
           </ul>
         </nav>
       </div>
-    </div>
-  </header>
-    
-    
-     <main>
-      
+    </header>
+
+    <main class="main-content">
+
       <section class="bild-bestand">
         <h2>Unsere Klassiker im Überblick</h2>
         <div class="bild-grid">
-          <img src="https://c8.alamy.com/compde/2ak6gkb/essen-currywurst-mit-pommes-in-der-kult-kneipe-ampuette-eine-der-letzten-echten-pott-kneipen-ruhrgebiet-verwendung-weltweit-2ak6gkb.jpg" width="300" height="300" alt="Currywurst mit Pommes">
-          <img src="https://www.muenster-geht-aus.de/data/address/5063///1_frhbisspt.jpg" width="300" height="300" alt="Frisches Gericht">
-          <img src="https://prag.de/wp-content/uploads/2021/02/Typisches-Essen-in-Prag-Traditionelle-tschechische-Ku%CC%88che-scaled.jpeg" width="300" height="300" alt="Traditionelles Essen">
+          <img src="https://c8.alamy.com/compde/2ak6gkb/essen-currywurst-mit-pommes-in-der-kult-kneipe-ampuette-eine-der-letzten-echten-pott-kneipen-ruhrgebiet-verwendung-weltweit-2ak6gkb.jpg" width="300" height="300" alt="Currywurst mit Pommes" />
+          <img src="https://www.muenster-geht-aus.de/data/address/5063///1_frhbisspt.jpg" width="300" height="300" alt="Frisches Gericht" />
+          <img src="https://prag.de/wp-content/uploads/2021/02/Typisches-Essen-in-Prag-Traditionelle-tschechische-Ku%CC%88che-scaled.jpeg" width="300" height="300" alt="Traditionelles Essen" />
         </div>
       </section>
-       
 
-        </section>
+      <!-- Vorspeisen -->
+      <section>
+        <table>
+          <caption>Vorspeisen</caption>
+          <thead>
+            <tr>
+              <th>Gericht</th>
+              <th>Beschreibung</th>
+              <th>Allergene</th>
+              <th>Preis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Kleiner gemischter Salat</th>
+              <td>Frisch und selber angebaut mit hausgemachtem Dressing</td>
+              <td>G</td>
+              <td>8,20 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Kaiserschmarrn</th>
+              <td>Mit Rosinen, Staubzucker und Zwetschkenröster</td>
+              <td>A, C, G</td>
+              <td>9,80 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Bündner Gerstensuppe</th>
+              <td>Deftige Suppe mit Gerste, Gemüse und Speck – nach Graubündner Art</td>
+              <td>G</td>
+              <td>7,80 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Hausgemachte Brotzeitplatte</th>
+              <td>Mit regionalem Käse, Wurst und frischem Bauernbrot</td>
+              <td>A, G</td>
+              <td>10,50 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-       
-        <table border="1" cellpadding="6">
-            <caption><strong>Vorspeisen</strong></caption>
-            <thead>
-              <tr>
-                <th scope="col">Gericht</th>
-                <th scope="col">Beschreibung</th> 
-                <th scope="col">Allergene</th>
-                <th scope="col">Preis</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Kleiner gemischter Salat</th>
-                <td>Frisch und selber angebaut mit hausgemachtem Dressing</td>
-                <td>G</td>
-                <td>8,20 €</td>
-              </tr>
-              <tr>
-                <th scope="row">Kaiserschmarrn</th>
-                <td>Mit Rosinen, Staubzucker und Zwetschkenröster</td>
-                <td>A, C, G</td>
-                <td>9,80 €</td>
-              </tr>
-              <tr>
-                <th scope="row">Bündner Gerstensuppe</th>
-                <td>Deftige Suppe mit Gerste, Gemüse und Speck – nach Graubündner Art</td>
-                <td>G</td>
-                <td>7,80 €</td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <br>
-          
-          <table border="1" cellpadding="6">
-            <caption><strong>Hauptgerichte</strong></caption>
-            <thead>
-              <tr>
-                <th scope="col">Gericht</th>
-                <th scope="col">Beschreibung</th>
-                <th scope="col">Allergene</th>
-                <th scope="col">Preis</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Rinderroulade</th>
-                <td>Mit Spätzle und Rahmsoße</td>
-                <td>A, C, G</td>
-                <td>13,80 €</td>
-              </tr>
-            </tbody>
-          </table>
+      <!-- Hauptgerichte -->
+      <section>
+        <table>
+          <caption>Hauptgerichte</caption>
+          <thead>
+            <tr>
+              <th>Gericht</th>
+              <th>Beschreibung</th>
+              <th>Allergene</th>
+              <th>Preis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Rinderroulade</th>
+              <td>Mit Spätzle und Rahmsoße</td>
+              <td>A, C, G</td>
+              <td>13,80 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Sauerbraten vom Rind</th>
+              <td>Traditionell eingelegt, dazu Kartoffelknödel</td>
+              <td>A, C, G</td>
+              <td>15,50 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Schweinebraten</th>
+              <td>Mit Krautsalat und Bratkartoffeln</td>
+              <td>A, G</td>
+              <td>14,00 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Vegetarische Gemüsepfanne</th>
+              <td>Mit saisonalem Gemüse und Kräutern, dazu Reis</td>
+              <td> - </td>
+              <td>12,50 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-          <h1>REST KOMMT NOCH..</h1>
+      <!-- Nachspeisen -->
+      <section>
+        <table>
+          <caption>Nachspeisen</caption>
+          <thead>
+            <tr>
+              <th>Gericht</th>
+              <th>Beschreibung</th>
+              <th>Allergene</th>
+              <th>Preis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Apfelstrudel</th>
+              <td>Warmer Strudel mit Vanillesoße</td>
+              <td>A, C, G</td>
+              <td>6,50 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Schwarzwälder Kirschtorte</th>
+              <td>Mit Sahne und Kirschfüllung</td>
+              <td>A, C, G</td>
+              <td>7,00 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Vanilleeis mit heißen Himbeeren</th>
+              <td>Hausgemacht mit frischen Früchten</td>
+              <td>G</td>
+              <td>5,80 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Kaiserschmarrn</th>
+              <td>Mit Staubzucker und Zwetschkenröster</td>
+              <td>A, C, G</td>
+              <td>7,90 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Getränke -->
+      <section>
+        <table>
+          <caption>Getränke</caption>
+          <thead>
+            <tr>
+              <th>Getränk</th>
+              <th>Beschreibung</th>
+              <th>Preis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Pils vom Fass (0,3l)</th>
+              <td>Frisch gezapft, regional</td>
+              <td>3,20 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Weißbier (0,5l)</th>
+              <td>Fruchtig und spritzig</td>
+              <td>4,50 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Apfelsaft naturtrüb (0,3l)</th>
+              <td>Direktsaft, ohne Zusätze</td>
+              <td>2,80 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Hausgemachte Limonade (0,4l)</th>
+              <td>Erfrischend mit frischer Minze</td>
+              <td>3,50 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
-        
 
-       
-     
-
+    <footer>
+      <p>© 2025 <b>Das Kneipen Gasthaus</b></p>
+    </footer>
+  </div>
 </body>
 
 </html>

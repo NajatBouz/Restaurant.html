@@ -1,58 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Dies ist das Kurs-Portfolio vom Kurs 25-01">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events - Zum Goldenen Hirsch</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Dies ist das Kurs-Portfolio vom Kurs 25-01" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events - Das Kneipen Gasthaus</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sevillana&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <div class="header-box">
-          <div class="text-hintergrund">
-            <h1>Das Kneipen Gasthaus</h1>
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ueber-uns.html">Über uns</a></li>
-                <li><a href="speisekarte.html">Speisekarte</a></li>
-                <li><a href="reservierung.html">Reservierung</a></li>
-                <li><a href="events.html">Event</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-    <main>
+  <div class="page-grid">
+    <header class="site-header">
+      <div class="header-box">
+        <div class="text-hintergrund"></div>
+        <h1 class="wdxl-lubrifont-sc-regular">Das Kneipen Gasthaus</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="speisekarte.html">Speisekarte</a></li>
+            <li><a href="reservierung.html">Reservierung</a></li>
+            <li><a href="events.html">Event</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-        <h1>Unsere Events für dieses Jahr</h1>
+    <main class="main-content">
+      <h1>Unsere Events für dieses Jahr</h1>
+      <p>
+        Im Laufe des Jahres finden bei uns im Gasthaus
+        <strong>"Das Kneipen Gasthaus"</strong> verschiedene saisonale
+        Veranstaltungen statt. Hier finden Sie eine Übersicht:
+      </p>
 
-        <p>Im Laufe des Jahres finden bei uns im Gasthaus <strong>"Das Kneipen Gasthaus"</strong> verschiedene saisonale Veranstaltungen statt. Hier finden Sie eine Übersicht:</p>
+      <div class="event-grid">
+        <article class="event-item">
+          <h2>Unsere Jährliche Bierverkostung</h2>
+          <p>
+            Am 28. August 2025 findet in unserem Gasthaus die diesjährige
+            Bierverkostung statt. Probieren auch Sie gerne von unserem
+            hausgemachten Bier und schmecken Sie unsere Tradition seit 1952.
+          </p>
+          <img
+            src="https://mein.toubiz.de/api/v1/event/9d33f005-3215-4797-95af-45494043accc/mainImage?format=image/jpeg&width=1900"
+            alt="Bierverkostung"
+          />
+        </article>
 
-        <h1>Unsere Jährliche Bierverkostung</h1>
-        <img src="https://mein.toubiz.de/api/v1/event/9d33f005-3215-4797-95af-45494043accc/mainImage?format=image/jpeg&width=1900" width="300" height="200" alt="Bierverkostung">
+        <article class="event-item">
+          <h2>Kneipen Party</h2>
+          <p>
+            Natürlich darf auch das Feiern nicht fehlen. Hier erwartet Sie
+            einmal im Monat ein riesiges Kneipenfest. Schauen Sie gerne bei
+            uns vorbei!
+          </p>
+          <img
+            src="https://www.rnz.de/cms_media/module_img/3581/1790671_3_detail_1790671_2_org_image_1396c42e1f3f02e3.jpg"
+            alt="Party"
+          />
+        </article>
 
-        <h1>Kneipen Party</h1>
-        <img src="https://www.rnz.de/cms_media/module_img/3581/1790671_3_detail_1790671_2_org_image_1396c42e1f3f02e3.jpg"  width="300" height="200" Party>
-        
-        
-
-
-
-
-
-
-
-
-
-
+        <article class="event-item">
+          <h2>Unsere Hauseigene Live Band</h2>
+          <p>
+            Immer jeden Samstag ab 21:00 Uhr in unserem Gasthaus. Freuen Sie
+            sich auf tolle Musik und eine atemberaubende Stimmung.
+          </p>
+          <img
+            src="https://www.schwaebisch-gmuend.de/files/upload/sgd/Veranstaltungen/Veranstaltungen%20T%26M/MiGK/MIGK%202.jpg"
+            alt="Live-Band"
+          />
+        </article>
+      </div>
     </main>
-   
 
+    <footer>
+      <p>2025 <b>Das Kneipen Gasthaus</b></p>
+    </footer>
+  </div>
 </body>
 
 </html>
